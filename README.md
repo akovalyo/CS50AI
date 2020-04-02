@@ -1,6 +1,6 @@
 # [CS50's Introduction to AI with Python](https://cs50.harvard.edu/ai/)
 
-![CS50AI](https://bit.ly/3aDKYsK)
+![CS50AI](https://bit.ly/3aF2soW)
 
 **The course projects**
 
