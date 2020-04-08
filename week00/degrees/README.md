@@ -5,12 +5,12 @@ node taken from frontier, it is checking nodes as they are added to the frontier
 
 ***Version 1:**
 
-![version1]()
+![version1](https://raw.githubusercontent.com/akovalyo/CS50AI/master/week00/degrees/scr/scr_1.png)
 
 **109 sec*
 
 
-![version1]()
+![version1](https://raw.githubusercontent.com/akovalyo/CS50AI/master/week00/degrees/scr/scr_1o.png)
 
 **705 sec*
 
@@ -18,12 +18,12 @@ node taken from frontier, it is checking nodes as they are added to the frontier
 **Version 2:**
 
 
-![version2]()
+![version2](https://raw.githubusercontent.com/akovalyo/CS50AI/master/week00/degrees/scr/scr_2.png)
 
 **2 sec*
 
 
-![version2]()
+![version2](https://raw.githubusercontent.com/akovalyo/CS50AI/master/week00/degrees/scr/scr_2o.png)
 
 **2.5 sec*
 
