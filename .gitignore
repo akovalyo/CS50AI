@@ -1,5 +1,8 @@
 env
 .tool_versions
-materials
+materials/
+.vscode
+.vscode
+__pycache__
+.~*
 .tool-versions
-week00
