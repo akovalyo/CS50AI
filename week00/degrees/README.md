@@ -53,4 +53,4 @@ node taken from frontier, it is checking nodes as they are added to the frontier
 
 **Video that shows the functionality of the script**
 
-[![Alt text](https://img.youtube.com/vi/QAjBharpQgU/0.jpg)](https://www.youtube.com/watch?v=QAjBharpQgU)
+[![Degrees - youtube](https://img.youtube.com/vi/QAjBharpQgU/0.jpg)](https://www.youtube.com/watch?v=QAjBharpQgU)

@@ -13,3 +13,9 @@ Write a program that determines how many “degrees of separation” apart two a
 [continue](https://github.com/akovalyo/CS50AI/tree/master/week00/degrees)
 
 ***
+
+#### Project 0b: Tic-Tac-Toe
+
+Implement an AI to play Tic-Tac-Toe optimally
+
+[continue](https://github.com/akovalyo/CS50AI/tree/master/week00/tictactoe)

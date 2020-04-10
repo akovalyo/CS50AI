@@ -6,3 +6,5 @@ materials/
 __pycache__
 .~*
 .tool-versions
+runner.py
+tictactoe.py
