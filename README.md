@@ -19,3 +19,12 @@ Write a program that determines how many “degrees of separation” apart two a
 Implement an AI to play Tic-Tac-Toe optimally
 
 [continue](https://github.com/akovalyo/CS50AI/tree/master/week00/tictactoe)
+
+## Week :one:
+
+#### Project 1a: Knights
+
+Your task in this problem is to determine how to represent  “Knights and Knaves” puzzles using propositional logic, such that an AI running a model-checking algorithm could solve these puzzles for us.
+
+[continue](https://github.com/akovalyo/CS50AI/tree/master/week01/knights)
+
