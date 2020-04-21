@@ -9,4 +9,5 @@ Implement an AI to play minesweeper game
 When you run your AI (as by clicking “AI Move”), it will not always win! There will be some cases where the AI must guess, because it lacks sufficient information to make a safe move. This is to be expected. runner.py will print whether the AI is making a move it believes to be safe or whether it is making a random move.
 
 *AI in action*
+
 [![Minesweeper - youtube](https://img.youtube.com/vi/-wGFA3Jo4JY/0.jpg)](https://youtu.be/-wGFA3Jo4JY)
