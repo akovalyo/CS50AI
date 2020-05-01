@@ -6,7 +6,7 @@
 
 ## Week :zero:
 
-#### Project 0a: Degrees
+### Project 0a: Degrees
 
 Write a program that determines how many “degrees of separation” apart two actors are.  Based on [Six Degrees of Kevin Bacon](https://en.wikipedia.org/wiki/Six_Degrees_of_Kevin_Bacon) game.
 
@@ -14,7 +14,7 @@ Write a program that determines how many “degrees of separation” apart two a
 
 ***
 
-#### Project 0b: Tic-Tac-Toe
+### Project 0b: Tic-Tac-Toe
 
 Implement an AI to play Tic-Tac-Toe optimally
 
@@ -24,7 +24,7 @@ Implement an AI to play Tic-Tac-Toe optimally
 
 ## Week :one:
 
-#### Project 1a: Knights
+### Project 1a: Knights
 
 Your task in this problem is to determine how to represent  “Knights and Knaves” puzzles using propositional logic, such that an AI running a model-checking algorithm could solve these puzzles for us.
 
@@ -32,8 +32,16 @@ Your task in this problem is to determine how to represent  “Knights and Knave
 
 ***
 
-#### Project 1b: Minesweeper
+### Project 1b: Minesweeper
 
 Minesweeper is a puzzle game that consists of a grid of cells, where some of the cells contain hidden “mines.” Clicking on a cell that contains a mine detonates the mine, and causes the user to lose the game. Clicking on a “safe” cell (i.e., a cell that does not contain a mine) reveals a number that indicates how many neighboring cells – where a neighbor is a cell that is one square to the left, right, up, down, or diagonal from the given cell – contain a mine.
 
 [continue](https://github.com/akovalyo/CS50AI/tree/master/week01/minesweeper)
+
+## Week :two:
+
+### Project 2a: PageRank
+
+Write an AI to rank web pages by importance.
+
+[continue](https://github.com/akovalyo/CS50AI/tree/master/week02/pagerank)
