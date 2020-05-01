@@ -34,7 +34,7 @@ Another approach is to define a page’s PageRank using a recursive mathematical
 
 PageRank for a page p:
 
-![formula](https://github.com/akovalyo/CS50AI/tree/master/week02/pagerank/src/formula.png)
+![formula](https://github.com/akovalyo/CS50AI/blob/master/week02/pagerank/src/formula.png?raw=true)
 
 **d** is the damping factor, **N** is the total number of pages in the corpus, **i** ranges over all pages that link to page **p**, and **NumLinks(i)** is the number of links present on page **i**.
 
