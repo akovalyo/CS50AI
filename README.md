@@ -38,6 +38,8 @@ Minesweeper is a puzzle game that consists of a grid of cells, where some of the
 
 [continue](https://github.com/akovalyo/CS50AI/tree/master/week01/minesweeper)
 
+***
+
 ## Week :two:
 
 ### Project 2a: PageRank
@@ -45,3 +47,21 @@ Minesweeper is a puzzle game that consists of a grid of cells, where some of the
 Write an AI to rank web pages by importance.
 
 [continue](https://github.com/akovalyo/CS50AI/tree/master/week02/pagerank)
+
+***
+
+### Project 2b: Heredity
+
+Write an AI to assess the likelihood that a person will have a particular genetic trait.
+
+[continue](https://github.com/akovalyo/CS50AI/tree/master/week02/heredity)
+
+***
+
+## Week :three:
+
+### Project 3: Crossword
+
+Write an AI to generate crossword puzzles.
+
+***

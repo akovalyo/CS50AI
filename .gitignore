@@ -1,4 +1,4 @@
-env
+venv
 .tool_versions
 materials/
 .vscode
@@ -6,3 +6,4 @@ materials/
 __pycache__
 .~*
 .tool-versions
+.python-version
