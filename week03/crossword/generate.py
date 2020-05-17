@@ -99,7 +99,7 @@ class CrosswordCreator():
         (Remove any values that are inconsistent with a variable's unary
          constraints; in this case, the length of the word.)
         """
-        for key in self.domains.keys():
+        for key in self.domains:
             word_len = key.get_len()
             for word in self.crossword.words:
                 if len(word) != word_len:
@@ -172,7 +172,6 @@ class CrosswordCreator():
                 return False
         return True
 
-
     def consistent(self, assignment):
         """
         Return True if `assignment` is consistent (i.e., words fit in crossword
@@ -180,8 +179,9 @@ class CrosswordCreator():
         """
         for var_x in assignment:
             word_x = assignment[var_x]
-            if var_x.length != len(word_x):
-                return False
+            if word_x:
+                if var_x.length != len(word_x):
+                    return False
 
             for var_y in assignment:
                 word_y = assignment[var_y]
@@ -190,7 +190,7 @@ class CrosswordCreator():
                         return False
 
                     overlap = self.crossword.overlaps[var_x, var_y]
-                    if overlap:
+                    if overlap and word_x and word_y:
                         if word_x[overlap[0]] != word_y[overlap[1]]:
                             return False
         return True
@@ -202,8 +202,20 @@ class CrosswordCreator():
         The first value in the list, for example, should be the one
         that rules out the fewest values among the neighbors of `var`.
         """
-
-        return self.domains[var]
+        neighbors = self.crossword.neighbors(var)
+        neighbors.difference_update(set(assignment))
+        output = {}
+        for word_x in self.domains[var]:
+            eliminated = 0
+            for neighbor in neighbors:
+                for word_y in self.domains[neighbor]:
+                    overlaps = self.crossword.overlaps[var, neighbor]
+                    if overlaps:
+                        if word_x[overlaps[0]] != word_y[overlaps[1]]:
+                            eliminated += 1
+            output[word_x] = eliminated
+        sort_output = sorted(output.items(), key=lambda x: x[1])
+        return [val[0] for val in sort_output]                   
 
     def select_unassigned_variable(self, assignment):
         """
@@ -213,9 +225,15 @@ class CrosswordCreator():
         degree. If there is a tie, any of the tied variables are acceptable
         return values.
         """
+        output = {}
         for var in self.crossword.variables:
-            if not var in assignment.keys():
-                return var
+            if not var in assignment:
+                ret = var
+                output[var] = (len(self.domains[var]), len(self.crossword.neighbors(var)))
+        if output:
+            sort_output = sorted(output.items(), key=lambda x: (x[1][0], -x[1][1]))
+            return sort_output[0][0]
+        return ret
 
     def backtrack(self, assignment):
         """
@@ -239,61 +257,6 @@ class CrosswordCreator():
                     else:
                         return res
         return None
-
-
-# def main():
-
-#     # Check usage
-#     if len(sys.argv) not in [3, 4]:
-#         sys.exit("Usage: python generate.py structure words [output]")
-
-#     # Parse command-line arguments
-#     structure = sys.argv[1]
-#     words = sys.argv[2]
-#     output = sys.argv[3] if len(sys.argv) == 4 else None
-
-#     # Generate crossword
-#     crossword = Crossword(structure, words)
-    
-#     ################################
-
-#     # print(crossword.overlaps)
-    
-#     # print(crossword.variables)
-#     a = Variable(4, 1, 'across', 4)
-#     aa = set(('NINE', ))
-#     b = Variable(1, 4, 'down', 4)
-#     bb = set(('FIVE', 'NINE'))
-#     c = Variable(0, 1, 'across', 3)
-#     cc = set(('SIX', ))
-#     d = Variable(0, 1, 'down', 5)
-#     dd = set(('SEVEN', ))
-
-#     assign = {a: aa, b: bb, c: cc}
-
-#     # print(assign)
-#     # print(crossword.words)
-#     creator = CrosswordCreator(crossword)
-    
-#     creator.enforce_node_consistency()
-#     # print(creator.domains)
-    
-#     # print(creator.revise(a, b))
-#     creator.ac3()
-#     # print(creator.domains)
-#     print(creator.consistent(assign))
-#     print(creator.backtrack(assign))
-#     ####################################
-
-#     # assignment = creator.solve()
-#     # # Print result
-#     # if assignment is None:
-#     #     print("No solution.")
-#     # else:
-#     #     creator.print(assignment)
-#     #     if output:
-#     #         creator.save(assignment, output)
-
 
 
 def main():
