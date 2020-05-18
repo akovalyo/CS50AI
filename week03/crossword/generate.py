@@ -99,11 +99,11 @@ class CrosswordCreator():
         (Remove any values that are inconsistent with a variable's unary
          constraints; in this case, the length of the word.)
         """
-        for key in self.domains:
-            word_len = key.get_len()
+        for var in self.domains:
+            word_len = var.length
             for word in self.crossword.words:
                 if len(word) != word_len:
-                    self.domains[key].remove(word)
+                    self.domains[var].remove(word)
 
     def revise(self, x, y):
         """
@@ -125,6 +125,7 @@ class CrosswordCreator():
                     for y_word in self.domains[y]:
                         if x_word[value[0]] == y_word[value[1]]:
                             delete = False
+                    # If a revision was made to the domain of x, remove the value from the domain 
                     if delete:
                         ret = True
                         self.domains[x].remove(x_word)
@@ -139,6 +140,7 @@ class CrosswordCreator():
         Return True if arc consistency is enforced and no domains are empty;
         return False if one or more domains end up empty.
         """
+        # If arcs is None, start with all of the arcs
         if not arcs:
             arcs = []
             vars = self.crossword.variables
@@ -148,12 +150,14 @@ class CrosswordCreator():
                     for neighbor in neighbors:
                         if not (var, neighbor) in arcs:
                             arcs.append((var, neighbor))
+        # While queue is not empty, revise each arc
         while len(arcs):
             arc = arcs.pop(0)
             if self.revise(arc[0], arc[1]):   
                 neighbors = self.crossword.neighbors(arc[0])
                 if len(neighbors):
                     for neighbor in neighbors:
+                        # If domain was changed, add affected arc again to arc
                         arcs.append((neighbor, arc[0]))
         for value in self.domains.values():
             if not len(value):
@@ -177,18 +181,19 @@ class CrosswordCreator():
         Return True if `assignment` is consistent (i.e., words fit in crossword
         puzzle without conflicting characters); return False otherwise.
         """
+        # Check if every value is the correct lenght 
         for var_x in assignment:
             word_x = assignment[var_x]
             if word_x:
                 if var_x.length != len(word_x):
                     return False
-
+            # Check if values are distinct
             for var_y in assignment:
                 word_y = assignment[var_y]
                 if var_x != var_y:
                     if word_x == word_y:
                         return False
-
+                    # Check if there are no conflicts between neighboring variables
                     overlap = self.crossword.overlaps[var_x, var_y]
                     if overlap and word_x and word_y:
                         if word_x[overlap[0]] != word_y[overlap[1]]:
@@ -205,6 +210,7 @@ class CrosswordCreator():
         neighbors = self.crossword.neighbors(var)
         neighbors.difference_update(set(assignment))
         output = {}
+        # For every value compute the number possible choices to be eleminated for neighboring variables
         for word_x in self.domains[var]:
             eliminated = 0
             for neighbor in neighbors:
@@ -229,6 +235,8 @@ class CrosswordCreator():
         for var in self.crossword.variables:
             if not var in assignment:
                 ret = var
+                # For every variable assign number of remaining values in its domain
+                # and number of neighbors
                 output[var] = (len(self.domains[var]), len(self.crossword.neighbors(var)))
         if output:
             sort_output = sorted(output.items(), key=lambda x: (x[1][0], -x[1][1]))
@@ -244,9 +252,11 @@ class CrosswordCreator():
 
         If no assignment is possible, return None.
         """
+        # Base case: return assignment if assignment is complete
         if self.assignment_complete(assignment):
             return assignment
         var = self.select_unassigned_variable(assignment)
+        # Take not used variable and check if assignment is complete
         for value in self.order_domain_values(var, assignment):
             if var:
                 assignment[var] = value

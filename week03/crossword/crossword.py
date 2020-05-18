@@ -33,9 +33,6 @@ class Variable():
     def __repr__(self):
         direction = repr(self.direction)
         return f"Variable({self.i}, {self.j}, {direction}, {self.length})"
-    
-    def get_len(self):
-        return (self.length)
 
 
 class Crossword():
