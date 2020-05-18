@@ -64,4 +64,6 @@ Write an AI to assess the likelihood that a person will have a particular geneti
 
 Write an AI to generate crossword puzzles.
 
+[continue](https://github.com/akovalyo/CS50AI/tree/master/week03/crossword)
+
 ***
