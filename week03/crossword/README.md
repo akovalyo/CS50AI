@@ -28,5 +28,6 @@ VOCABULARY - file with words
 
 IMAGE - optional, to save result in png file
 
+**Result:**
 
 [![Crossword - youtube](https://img.youtube.com/vi/6e9ojqtppqA/0.jpg)](https://youtu.be/6e9ojqtppqA)
