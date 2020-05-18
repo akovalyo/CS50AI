@@ -23,7 +23,9 @@ python generate.py STRUCTURE VOCABULARY [IMAGE.png]
 ```
 
 STRUCTURE - file with structure of the crossword
+
 VOCABULARY - file with words
+
 IMAGE - optional, to save result in png file
 
 
