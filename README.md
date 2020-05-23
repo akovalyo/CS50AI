@@ -67,3 +67,13 @@ Write an AI to generate crossword puzzles.
 [continue](https://github.com/akovalyo/CS50AI/tree/master/week03/crossword)
 
 ***
+
+## Week :four:
+
+### Project 4a: Shopping
+
+Write an AI to predict whether online shopping customers will complete a purchase.
+
+[continue](https://github.com/akovalyo/CS50AI/tree/master/week04/shopping)
+
+***
