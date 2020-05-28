@@ -77,3 +77,13 @@ Write an AI to predict whether online shopping customers will complete a purchas
 [continue](https://github.com/akovalyo/CS50AI/tree/master/week04/shopping)
 
 ***
+
+### Project 4b: Nim
+
+Write an AI that teaches itself to play Nim through reinforcement learning.
+
+[continue](https://github.com/akovalyo/CS50AI/tree/master/week04/nim)
+
+***
+
+## Week :five:
