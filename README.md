@@ -87,3 +87,22 @@ Write an AI that teaches itself to play Nim through reinforcement learning.
 ***
 
 ## Week :five:
+
+### Project 5: Traffic
+
+Write an AI to identify which traffic sign appears in a photograph.
+
+[continue](https://github.com/akovalyo/CS50AI/tree/master/week05/traffic)
+
+***
+
+## Week :six:
+
+### Project 6a: Parser
+
+
+***
+
+### Project 6b: Questions
+
+***
