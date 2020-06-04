@@ -52,4 +52,6 @@ So if your opponent won't make mistakes, you can not win the game if your move i
 
 * If AI starts first, it should win if human will make mistake
 
+*Video on youtube showing result*
+
 [![Nim - youtube](https://img.youtube.com/vi/jvw-UBRwZ7g/0.jpg)](https://youtu.be/jvw-UBRwZ7g)

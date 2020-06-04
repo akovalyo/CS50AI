@@ -16,4 +16,6 @@ We can attempt to model all of these relationships by forming a Bayesian Network
 
 ## Result
 
+*Video on youtube showing result*
+
 [![Heredity - youtube](https://img.youtube.com/vi/a1wgDdGR3Io/0.jpg)](https://youtu.be/a1wgDdGR3Io)

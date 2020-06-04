@@ -28,4 +28,6 @@ python parser.py [FILE.txt]
 
 FILE.txt - (optional) file with sentence.
 
+*Video on youtube showing result*
+
 [![Parser - youtube](https://img.youtube.com/vi/dnpnv_x1TFE/0.jpg)](https://youtu.be/dnpnv_x1TFE)

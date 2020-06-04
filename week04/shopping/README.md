@@ -40,4 +40,6 @@ True Positive Rate: 38.83%
 True Negative Rate: 91.49%
 ```
 
+*Video on youtube showing result*
+
 [![Shopping - youtube](https://img.youtube.com/vi/VaXkoFzoj7Y/0.jpg)](https://youtu.be/VaXkoFzoj7Y)

@@ -27,4 +27,6 @@ FILENAME - (optionally) a filename to which to save the trained model.
 
 ![signs](https://github.com/akovalyo/CS50AI/blob/master/week05/traffic/src/res.png?raw=true)
 
+*Video on youtube showing result*
+
 [![Traffic - youtube](https://img.youtube.com/vi/PywJpVv29Iw/0.jpg)](https://youtu.be/PywJpVv29Iw)

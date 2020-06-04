@@ -16,7 +16,8 @@ pygame
 ```
 ***
 
-**Video that shows the functionality of the script**
+## Result
 
+*Video on youtube showing result*
 
 [![Tictactoe - youtube](https://img.youtube.com/vi/ysGEuxOSqRc/0.jpg)](https://youtu.be/ysGEuxOSqRc)

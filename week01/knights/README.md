@@ -31,4 +31,6 @@ Logically, we might reason that if A were a knight, then that sentence would hav
     * B then says “C is a knave.”
     * C says “A is a knight.”
 
-[![Tictactoe - youtube](https://img.youtube.com/vi/E8U0NHNGlKo/0.jpg)](https://youtu.be/E8U0NHNGlKo)
+*Video on youtube showing result*
+
+[![Knights - youtube](https://img.youtube.com/vi/E8U0NHNGlKo/0.jpg)](https://youtu.be/E8U0NHNGlKo)

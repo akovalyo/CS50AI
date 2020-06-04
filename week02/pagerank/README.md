@@ -78,4 +78,6 @@ DIRECTORY - the name of a directory of a corpus of web pages to compute PageRank
 
 The output of these two algorithms should be similar when given the same corpus.
 
+*Video on youtube showing result*
+
 [![PageRank - youtube](https://img.youtube.com/vi/2pqBiKSvcQc/0.jpg)](https://youtu.be/2pqBiKSvcQc)
