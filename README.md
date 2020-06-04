@@ -100,6 +100,9 @@ Write an AI to identify which traffic sign appears in a photograph.
 
 ### Project 6a: Parser
 
+Write an AI to parse sentences and extract noun phrases.
+
+[continue](https://github.com/akovalyo/CS50AI/tree/master/week06/parser)
 
 ***
 
