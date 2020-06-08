@@ -108,4 +108,8 @@ Write an AI to parse sentences and extract noun phrases.
 
 ### Project 6b: Questions
 
+Write an AI to answer questions.
+
+[continue](https://github.com/akovalyo/CS50AI/tree/master/week06/questions)
+
 ***
